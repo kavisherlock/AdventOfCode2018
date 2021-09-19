@@ -1,0 +1,9 @@
+This was easily the trickiest so far. In fact, I did part 1 two different ways, once before and once after part 2, since I realised the method used to solve part 2 would work for part 1 as well
+Before anything was the fun realisation that the logs are conveniently not sorted. Made a sort function for that to sort by log time. It slows the whole program down by quite a bit, but quite obviously necessary, since without it, there's no way to know which log belongs to which guard
+
+First attempt for Part 1 was divided into four parts. Getting the sleep amounts of each guard, finding the sleepiest guard, getting the actual times they are asleep and finding the minute they are asleep the most
+The cool new thing I worked with in C++ for the first time was regex. Had to do some regex searches for different log types and times.
+This attempt used a string-int map to keep track of guard sleep times to find the sleepiest guard, then a vector to find the minutes they are asleep to get their sleepiest minute
+
+Then came Part 2. This reversed the problem. Instead of finding the guard who slept the most, I had to find the guard is most frequently asleep on the same minute. This involved a lot more than just tracking the number of minutes guards spent asleep. I needed each minutes details for each guard. So I did what the initial problem hinted at by the table. I made a string-to-vector map of guard-to-minutes asleep. Once I had that map built, the problem was simple. Just find the minute most slept on
+In fact, once I had that map, part 1 was also simple. Just find the sleepiest guard and the info of their minutes alseep is already there

@@ -1,0 +1,2 @@
+Part 1 was fairly straightforward, as long as you know how to use a map. Just had to save letter counts and which strings had two and three counts of a letter
+In Part 2, a simple function, that returns a vector of common letters, was enough to compare each string with every other, to find which two differ by exactly one character

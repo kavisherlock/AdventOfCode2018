@@ -10,6 +10,9 @@ using namespace std;
 const int ROW_COUNT = 400;
 const int COLUMN_COUNT = 400;
 
+/**
+ * Prints the 2d array
+ */
 void printArea (vector<vector<char>> &area) {
   cout << endl;
   for (int i = 0; i < area.size(); i += 1) {
@@ -20,6 +23,10 @@ void printArea (vector<vector<char>> &area) {
   }
 }
 
+/**
+ * Gets coordinaties Manhattan distance d away from (x,y)
+ * bounded by (0, 0) and (maxX, maxY)a 
+ */
 set<pair<int,  int>> getNearbyCoordiates(int d, int x, int y, int maxX, int maxY) {
   set<pair<int, int>> coordinates;
   for (int i = 0; i <= d; i += 1) {
@@ -35,6 +42,9 @@ set<pair<int,  int>> getNearbyCoordiates(int d, int x, int y, int maxX, int maxY
   return coordinates;
 }
 
+/**
+ * Finds the closest site (marked by a non-space character) to (x,y) in area
+ */
 char findClosest (vector<vector<char>> &area, int x, int y) {
   if (area[x][y] != ' ') return area[x][y];
   char closest = '#';

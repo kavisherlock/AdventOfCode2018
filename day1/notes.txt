@@ -1,0 +1,2 @@
+Part 1 was literally just adding numbers, but since it had been a while since C++, had to remember the basics, including reading files
+Part 2 was only slightly more involved with a loop surrounding the code in part 1 and using a map to keep track of frequencies hit (could've used an array, but *shrug* easier with a map)

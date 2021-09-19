@@ -1,0 +1,3 @@
+This was like a matter-antimatter chain, with matching particles annihilating each other if they meet
+Implementation of part 1 was to have a loop where we keep doing step by step, letting particles react until the chain length remains the same (i.e no more reactions)
+Part 2 was just build on Part 1. I just had to remove each alphabet pair and see which results in the smallest result

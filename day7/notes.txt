@@ -1,0 +1,7 @@
+Now that I've been using regex for these problems, I'm getting more comfortable with it, so that's a plus
+For Part 1 this problem, my mind instantly started coming up with different options, involving stacks and arrays. It actually ended up being trickier than a simple stack implementation
+I had to have a few vectors to keep track of things: one for the next steps for each step, one for the prereqs for each step, one to see if a step is completed and one for the currently available steps for execution
+Then it was a matter of looping through until all instructions are executed, executing the step in the availableSteps vector that has all prereqs complete and pushing back it's next steps in availableSteps (thus using all four of the above vectors). Once done, we have our instructions in the order of execution
+
+Part 2 used a fair amount of stuff from part 1, but added more vectors. One for the current steps (since there are multiple workers) and one for each worker's current workload
+The key differences was to, instead of executing each instruction immediately, assign it to a worker and keep track of how long it's taking. It essentially turned simple assignments and checks into loops

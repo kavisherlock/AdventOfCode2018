@@ -1,0 +1,6 @@
+It was only a matter of time before we got a problem involving Manhattan Distances
+Part 1 had a few fun things to deal with. We start by a 2d vector of chars for the coordinate system. Then, we go through the whole thing and for each point, find the closest site. This involved two functions. One to get all the coordianates a certain manhattan disstance away, and one to find the closest site using the previous function.
+Once I had the closest site for each point in the array (and after quickly dealing with the four corners), all I needed was the site with the max number of points closest to it
+This was definitely a divide and conquer, of solving one problem at a time, and using the function to solve the next
+
+Part 2 was actually a lot simpler. Instead of dealing with each coordinate, trying to find the closest site to it, I just had to take each and find the distance to all sites. If that distance is less tha 10000, count it. And just find the total count

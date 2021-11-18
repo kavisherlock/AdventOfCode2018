@@ -5,7 +5,7 @@
 using namespace std;
 
 const int N_PLAYERS = 473;
-const int N_MARBLES = 7090400;
+const int N_MARBLES = 70904;
 
 int main () {
   cout << "Playing game with " << N_PLAYERS << " players and " << N_MARBLES << " marbles.\n";

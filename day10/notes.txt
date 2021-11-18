@@ -1,0 +1,6 @@
+Just by looking at it, I knew a good chunk of time is gonna be me dealing with strings in C++ and not actually solving the problem. The problem itself was very simple. Just apply the velocity to the coordinates over and over again.
+Few things I did to make this a bit more sensible and make my life a bit easier
+Firstly, I didn't use a 2d array to represent the coordinates. Instead, I went with a vector of pairs. This made applying the velocity a simple loop rather than a nested one with updating the old and new coordinates for each point, most of which were empty anyway
+Second, realising that the initial coordinates are way way to far apart to make a sensible message. It was pretty obvious that for the first 10,000 seconds, they're too far to make a sensible message. So I ran that prep
+And lastly, realising how to tell when the message has appeared. Initially, I thought I needed to print a few messages and only a human can detect when letters appear. But then I realised that given the velocities, the point when letters appear would be when all the coordinates were at their closest before going apart in the other directions.
+So, I kept track of the distances between the farthest x and y coordinates and the point at which that distance stopped shrinking and started growing again was the point the message appeared.

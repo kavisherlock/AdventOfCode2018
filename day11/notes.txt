@@ -1,0 +1,3 @@
+A surprisingly straightforward problem. Just a bit of arithmetic operations to find each power level and then just had to add up a 3x3 square of them to find the max total power
+Part 2 was just varying the size of the squares. Took a bit longer, but gave the answer nonetheless
+Now, there are ways I could've made the calculations a bit more efficient coz it was doing a lot of repeated adding while calculating the total powers, but for a 300x300 square, didn't feel like it. The numbers are small enough

@@ -1,0 +1,2 @@
+This was probably the easiest one yet. Just a simple vector for the recipes and all I had to do was add new ones to it following a simple set of rules until we reach a certain size.
+Part two wasn't much harder, where instead of waiting to reach a certain size, we wait for it to have a certain digit configuration. I just had to check the last few recipes each time to see if the input was present yet and keep looping until it was
